@@ -1,0 +1,110 @@
+/* display: grid */
+/* Grid gutter -> gap */
+/* Grid track -> row */
+/* Grid track -> column */
+/* Grid cell */
+/* Grid area */
+
+.container {
+  background-color: #ddd;
+  margin: 40px auto;
+
+  width: 800px;
+  /* height: 400px; */
+
+  display: grid;
+
+  /* grid-template-rows: 150px 150px; */
+  /* grid-template-columns: 150px 150px 150px; */
+  /* grid-template-rows: auto auto; */
+  /* grid-template-columns: 150px 1fr 1fr; */
+  /* grid-template-rows: 2fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 50% repeat(2, 1fr);
+
+ 
+
+  grid-row-gap: 30px;
+  /* grid-column-gap: 30px; */
+  /* grid-gap: 30px 50px;  */
+  /* grid-gap: 100px; */
+
+  /* justify-items: stretch; */
+  justify-items: center;
+  /* justify-items: start; */
+  /* justify-items: end; */
+
+  /* align-items: stretch; */
+  /* align-items: center; */
+  /* align-items: start; */
+  align-items: end;
+
+  justify-content: start;
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* align-content: start; */
+  /* align-content: center; */
+  align-content: end;
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+}
+
+.item {
+  padding: 30px;
+  font-size: 30px;
+  width: 100px;
+  color: #fff;
+}
+
+.item-1 {
+  background-color: orangered;
+  grid-column-start: 3;
+  /* grid-column-end: 4; */
+
+  grid-column-start: 2;
+  /* grid-column-end: 3; */
+
+  /* grid-area: 2/2/3/3; */
+}
+
+.item-2 {
+  background-color: olivedrab;
+  /* grid-column: 2/3; */
+  /* grid-row: 2/3; */
+  /* z-index: 10; */
+
+  /* justify-self: stretch; */
+  /* justify-self: start; */
+  /* justify-self: center; */
+  justify-self: end;
+
+  /* align-self: stretch; */
+  /* align-self: start; */
+  /* align-self: center; */
+  align-self: end;
+}
+
+.item-3 {
+  background-color: royalblue;
+  /* grid-column: 1/3; */
+  /* grid-row: 1/3; */
+}
+
+.item-4 {
+  background-color: palevioletred;
+}
+
+.item-5 {
+  background-color: goldenrod;
+}
+
+.item-6 {
+  background-color: blueviolet;
+
+  /* grid-column: 1 / span 3; */
+}
